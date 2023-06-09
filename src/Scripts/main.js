@@ -1,26 +1,20 @@
 
-    
-///reveal
-    const revealElements = document.querySelectorAll(".reveal");
 
-    const observer = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    // Si el elemento está en pantalla, agregamos la clase CSS para iniciar la animación
-                    entry.target.classList.add("reveal--animate");
-                    // Detenemos la observación para este elemento
-                    observer.unobserve(entry.target);
-                }
-            });
-        },
-        { once: true }
-    );
+    const fadeElements = document.querySelectorAll(".fade-in");
 
-    // Observamos los elementos
-    revealElements.forEach((element) => {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fadeInUp");
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    fadeElements.forEach((element) => {
         observer.observe(element);
     });
+
 
 ///scroll top
     window.onbeforeunload = function () {

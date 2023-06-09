@@ -1,6 +1,5 @@
 <header class="page one bg-light">
-    <nav></nav>
-    <div class="contain-img-head">
+    <!-- <div class="contain-img-head">
         <div class="box-img">
             <img class="img1 rounded shadow" src="imagenes/header1.png" height="100%" />
 
@@ -10,16 +9,16 @@
                 <img class="img3 rounded shadow" src="imagenes/header3.jpg" style="filter: brightness(0.8) " />
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="contain-header">
         <header class="header">
             <div class="cent-bx-title-header">
                 <div class="contain-text-title-header rounded">
-                    <div class="reveal position-header">
-                        <h1 class="title-header reveal__content">Karawan</h1>
+                    <div class="position-header fadeInUp">
+                        <h1 class="title-header element1">Karawan</h1>
                     </div>
-                    <div class="reveal heightsub1">
-                        <p class="text-header reveal__content">
+                    <div class="heightsub1 fadeInUp">
+                        <p class="text-header element2">
                             Ideas originadas por emprendedores, a partir de las necesidades requeridas por ustedes,
                             ofrecemos un servicio enfocado en lujo, comodidad y calidad. Contando actualmente con
                             <span class="bold">Baños de Lujo</span> y <span class="bold">Karawan Outdoor</span>
@@ -48,10 +47,6 @@
         --color6: #ddffbb;
         --colorletras: #212529;
     }
-    .position-header {
-        display: flex;
-        align-items: end;
-    }
 
     .contain-header {
         width: 100%;
@@ -59,15 +54,14 @@
     }
     .heightsub1 {
         height: 220px;
-        width: 760px;
-        margin-top: 1rem;
+        width: 730px;
     }
     .one {
-        background-image: url(../imagenes/elemento1.png);
+        /* background-image: url(../imagenes/elemento1.png); */
         height: 100vh;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+
         width: 100%;
     }
     .box-img {
@@ -115,37 +109,32 @@
         height: 100vh;
 
         align-items: center;
-
+        justify-content: center;
         display: flex;
-        padding: 20rem;
     }
 
     .contain-text-title-header {
         min-width: 800px;
-        height: 530px;
+        align-items: center;
         display: flex;
         flex-direction: column;
     }
 
     .title-header {
         font-family: var(--fuenteextra);
-        font-size: 17rem !important;
+        font-size: 15rem !important;
         margin: 0;
         font-weight: 900;
-        text-shadow: 20px 21px 0px rgba(0, 0, 0, 0.18);
+        /* text-shadow: 20px 21px 0px rgba(0, 0, 0, 0.18); */
         color: var(--colorletras);
         text-transform: uppercase;
     }
 
     .text-header {
-        margin: 0;
-        text-align: justify;
-        min-width: 500px;
+        text-align: center;
         font-size: 2.5rem;
-        margin-left: 0.9rem;
         color: var(--colorletras);
         font-weight: 300;
-        padding-left: 3px;
     }
 
     .next-explore {

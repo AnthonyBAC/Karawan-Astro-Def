@@ -29,12 +29,12 @@
             </div>
         </div>
         <div class="text-position-grid-banos">
-            <div class="title-sub-align-banos reveal">
-                <div class="reveal">
-                    <h1 class="reveal__content end">Karawan</h1>
+            <div class="title-sub-align-banos">
+                <div class="fadeInUp">
+                    <h1 class="element1 fade-in end">Karawan</h1>
                 </div>
-                <div class="reveal">
-                    <h2 class="reveal__content pad-right">Baños De Lujo</h2>
+                <div class="fadeInUp">
+                    <h2 class="element2 fade-in pad-right">Baños De Lujo</h2>
                 </div>
             </div>
             <p class="text-banos pad-right">
@@ -146,6 +146,9 @@
         height: 800px;
         display: grid;
         grid-template-columns: 60% 40%;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem;
     }
 
     .contain-gallery-banos,
@@ -168,14 +171,13 @@
         justify-content: start;
         align-items: end;
         height: 560px;
-        padding: 1rem;
-        max-width: 50rem;
     }
 
     .title-sub-align-banos,
     .title-sub-align-outdoor {
         margin-bottom: 5rem;
         text-align: end;
+        width: 485px;
     }
 
     .text-banos,
@@ -189,22 +191,17 @@
     .one,
     .two,
     .three {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
         height: 100vh;
     }
 
-    .two {
+    /* .two {
         background-image: url(imagenes/elemento2.png);
         justify-content: center;
     }
 
     .three {
         background-image: url(imagenes/elemento3.png);
-    }
-
+    } */
     .container-gall {
         display: flex;
         width: 100%;
