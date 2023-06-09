@@ -1,0 +1,249 @@
+<div class="page two bg-light">
+    <div class="contain-grid-banos">
+        <div class="contain-gallery-banos">
+            <div class="container-gall">
+                <div class="boxgall shadow">
+                    <img src="imagenes/ejemplo1.jpg" />
+                    <span>Imagen 1</span>
+                </div>
+                <div class="boxgall shadow">
+                    <img src="imagenes/ejemplo2.jpg" />
+                    <span>Imagen 2</span>
+                </div>
+                <div class="boxgall shadow">
+                    <img src="imagenes/ejemplo3.jpg" />
+                    <span>Imagen 3</span>
+                </div>
+                <div class="boxgall shadow">
+                    <img src="imagenes/ejemplo4.jpg" />
+                    <span>Imagen 4</span>
+                </div>
+                <div class="boxgall shadow">
+                    <img src="imagenes/ejemplo4.jpg" />
+                    <span>Imagen 4</span>
+                </div>
+                <div class="boxgall shadow">
+                    <img src="imagenes/ejemplo4.jpg" />
+                    <span>Imagen 4</span>
+                </div>
+            </div>
+        </div>
+        <div class="text-position-grid-banos">
+            <div class="title-sub-align-banos reveal">
+                <div class="reveal">
+                    <h1 class="reveal__content end">Karawan</h1>
+                </div>
+                <div class="reveal">
+                    <h2 class="reveal__content pad-right">Baños De Lujo</h2>
+                </div>
+            </div>
+            <p class="text-banos pad-right">
+                Para todo tipo de eventos. Privacidad, elegancia y amplios espacio poseen nuestros baños de lujo.
+                Asesoría personalizada con más de 15 años de experiencia entregando soluciones y alternativas a nuestros
+                clientes para que reciban a sus invitados o clientes con el mejor servicio.
+            </p>
+        </div>
+    </div>
+    <div class="button-next1">
+        <!-- <button>
+            <a href="#section-outdoor"
+                ><img
+                    src="imagenes/reshot-icon-chevron-right-SAFH2L63TU.svg"
+                    width="300"
+                    height="40px"
+                    style="transform: rotate(90deg)"
+                    alt=""
+                /></a
+            >
+        </button> -->
+    </div>
+</div>
+<div class="divider shadow-lg"></div>
+<div id="section-outdoor"></div>
+<div class="page three bg-light">
+    <div class="contain-grid-outdoor">
+        <div class="contain-gallery-outdoor">
+            <div class="contain-gallery-banos">
+                <div class="container-gall">
+                    <div class="boxgall shadow">
+                        <img src="imagenes/ejemplo1.jpg" />
+                        <span>Imagen 1</span>
+                    </div>
+                    <div class="boxgall shadow">
+                        <img src="imagenes/ejemplo2.jpg" />
+                        <span>Imagen 2</span>
+                    </div>
+                    <div class="boxgall shadow">
+                        <img src="imagenes/ejemplo3.jpg" />
+                        <span>Imagen 3</span>
+                    </div>
+                    <div class="boxgall shadow">
+                        <img src="imagenes/ejemplo4.jpg" />
+                        <span>Imagen 4</span>
+                    </div>
+                    <div class="boxgall shadow">
+                        <img src="imagenes/ejemplo4.jpg" />
+                        <span>Imagen 4</span>
+                    </div>
+                    <div class="boxgall shadow">
+                        <img src="imagenes/ejemplo4.jpg" />
+                        <span>Imagen 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-position-grid-outdoor">
+            <div class="title-sub-align-outdoor">
+                <div class="reveal">
+                    <h1 class="reveal__content">Karawan</h1>
+                </div>
+                <div class="reveal">
+                    <h2 class="reveal__content pad-right">Outdoor</h2>
+                </div>
+            </div>
+            <p class="text-outdoor pad-right">
+                Nace una nueva aventura para viajar, disfrutar al aire libre ¡donde quieras y cuando quieras! Traza una
+                nueva ruta con experiencias inolvidables junto a KARAWAN OUTDOOR
+            </p>
+        </div>
+    </div>
+    <div class="button-up">
+        <!-- <button>
+            <a href="#section-header"
+                ><img
+                    src="imagenes/reshot-icon-chevron-right-SAFH2L63TU.svg"
+                    width="300"
+                    height="40px"
+                    style="transform: rotate(-90deg)"
+                    alt=""
+                /></a
+            >
+        </button> -->
+    </div>
+</div>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    @import url("https://fonts.cdnfonts.com/css/century-gothic?styles=24895,24896");
+
+    :root {
+        --fuentetitulos: "Raleway", sans-serif;
+        --fuenteparrafos: "Nunito Sans", sans-serif;
+        --fuenteextra: "Century Gothic", sans-serif;
+        --color1: #393646;
+        --color2: #4f4557;
+        --color3: #6d5d6e;
+        --color4: #f4eee0;
+        --color5: #c4dfdf;
+        --color6: #ddffbb;
+        --colorletras: #212529;
+    }
+
+    .contain-grid-banos,
+    .contain-grid-outdoor {
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .contain-gallery-banos,
+    .contain-gallery-outdoor {
+        grid-column: 1 / 2;
+        grid-template-columns: 100%;
+        display: grid;
+    }
+
+    .gallery-banos {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .text-position-grid-banos,
+    .text-position-grid-outdoor {
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        height: 560px;
+        padding: 1rem;
+        max-width: 50rem;
+    }
+
+    .title-sub-align-banos,
+    .title-sub-align-outdoor {
+        margin-bottom: 5rem;
+        text-align: end;
+    }
+
+    .text-banos,
+    .text-outdoor {
+        font-family: var(--fuentetitulos);
+        font-size: 2.4rem;
+        text-align: justify;
+        max-width: 485px;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .two {
+        background-image: url(imagenes/elemento2.png);
+        justify-content: center;
+    }
+
+    .three {
+        background-image: url(imagenes/elemento3.png);
+    }
+
+    .container-gall {
+        display: flex;
+        width: 100%;
+        padding: 3rem;
+        box-sizing: border-box;
+        height: 560px;
+    }
+
+    .boxgall {
+        flex: 1;
+        overflow: hidden;
+        transition: 0.5s;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+        line-height: 0;
+        color: var(--color4);
+        background-color: var(--colorletras);
+    }
+
+    .boxgall > img {
+        width: 200%;
+        height: calc(100% - 10vh);
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    .boxgall > span {
+        font-size: 3.8vh;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+    }
+
+    .boxgall:hover {
+        flex: 1 1 50%;
+    }
+    .boxgall:hover > img {
+        width: 100%;
+        height: 100%;
+    }
+</style>

@@ -1,0 +1,157 @@
+<header class="page one bg-light">
+    <nav></nav>
+    <div class="contain-img-head">
+        <div class="box-img">
+            <img class="img1 rounded shadow" src="imagenes/header1.png" height="100%" />
+
+            <img class="img2 rounded shadow" src="imagenes/header2.png" height="100%" />
+
+            <div class="position-img3">
+                <img class="img3 rounded shadow" src="imagenes/header3.jpg" style="filter: brightness(0.8) " />
+            </div>
+        </div>
+    </div>
+    <div class="contain-header">
+        <header class="header">
+            <div class="cent-bx-title-header">
+                <div class="contain-text-title-header rounded">
+                    <div class="reveal position-header">
+                        <h1 class="title-header reveal__content">Karawan</h1>
+                    </div>
+                    <div class="reveal heightsub1">
+                        <p class="text-header reveal__content">
+                            Ideas originadas por emprendedores, a partir de las necesidades requeridas por ustedes,
+                            ofrecemos un servicio enfocado en lujo, comodidad y calidad. Contando actualmente con
+                            <span class="bold">Baños de Lujo</span> y <span class="bold">Karawan Outdoor</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</header>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    @import url("https://fonts.cdnfonts.com/css/century-gothic?styles=24895,24896");
+
+    :root {
+        --fuentetitulos: "Raleway", sans-serif;
+        --fuenteparrafos: "Nunito Sans", sans-serif;
+        --fuenteextra: "Century Gothic", sans-serif;
+        --color1: #393646;
+        --color2: #4f4557;
+        --color3: #6d5d6e;
+        --color4: #f4eee0;
+        --color5: #c4dfdf;
+        --color6: #ddffbb;
+        --colorletras: #212529;
+    }
+    .position-header {
+        display: flex;
+        align-items: end;
+    }
+
+    .contain-header {
+        width: 100%;
+        height: 100vh;
+    }
+    .heightsub1 {
+        height: 220px;
+        width: 760px;
+        margin-top: 1rem;
+    }
+    .one {
+        background-image: url(../imagenes/elemento1.png);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+    .box-img {
+        width: 700px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        overflow: hidden;
+        opacity: 0.9;
+    }
+    .contain-img-head {
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-end;
+        /* z-index: 9999; */
+        align-items: center;
+        display: flex;
+        padding: 20rem;
+        position: absolute;
+    }
+
+    .img1 {
+        height: 500px;
+        /* position: relative; */
+        /* background-size: cover; */
+        width: 340px;
+    }
+
+    .img2 {
+        width: 340px;
+        height: 290px;
+        object-fit: cover;
+    }
+
+    .position-img3 {
+        width: 470px;
+
+        position: relative;
+        height: 290px;
+        left: 22rem;
+    }
+
+    .cent-bx-title-header {
+        height: 100vh;
+
+        align-items: center;
+
+        display: flex;
+        padding: 20rem;
+    }
+
+    .contain-text-title-header {
+        min-width: 800px;
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-header {
+        font-family: var(--fuenteextra);
+        font-size: 17rem !important;
+        margin: 0;
+        font-weight: 900;
+        text-shadow: 20px 21px 0px rgba(0, 0, 0, 0.18);
+        color: var(--colorletras);
+        text-transform: uppercase;
+    }
+
+    .text-header {
+        margin: 0;
+        text-align: justify;
+        min-width: 500px;
+        font-size: 2.5rem;
+        margin-left: 0.9rem;
+        color: var(--colorletras);
+        font-weight: 300;
+        padding-left: 3px;
+    }
+
+    .next-explore {
+        font-size: 5rem;
+        font-weight: 100;
+        margin: 0;
+        color: var(--color4);
+    }
+</style>
