@@ -30,18 +30,21 @@
         </div>
         <div class="text-position-grid-banos">
             <div class="title-sub-align-banos">
-                <div class="fadeInUp">
-                    <h1 class="element1 fade-in end">Karawan</h1>
+                <div class="appear">
+                    <h1 class="end">Karawan</h1>
                 </div>
-                <div class="fadeInUp">
-                    <h2 class="element2 fade-in pad-right">Baños De Lujo</h2>
+                <div class="appear2">
+                    <h2 class="pad-right">Baños De Lujo</h2>
+                </div>
+                <div class="appear2 mt-5">
+                    <p class="text-banos pad-right">
+                        Para todo tipo de eventos. Privacidad, elegancia y amplios espacio poseen nuestros baños de
+                        lujo. Asesoría personalizada con más de 15 años de experiencia entregando soluciones y
+                        alternativas a nuestros clientes para que reciban a sus invitados o clientes con el mejor
+                        servicio.
+                    </p>
                 </div>
             </div>
-            <p class="text-banos pad-right">
-                Para todo tipo de eventos. Privacidad, elegancia y amplios espacio poseen nuestros baños de lujo.
-                Asesoría personalizada con más de 15 años de experiencia entregando soluciones y alternativas a nuestros
-                clientes para que reciban a sus invitados o clientes con el mejor servicio.
-            </p>
         </div>
     </div>
     <div class="button-next1">
@@ -94,17 +97,19 @@
         </div>
         <div class="text-position-grid-outdoor">
             <div class="title-sub-align-outdoor">
-                <div class="reveal">
+                <div class="appear2">
                     <h1 class="reveal__content">Karawan</h1>
                 </div>
-                <div class="reveal">
+                <div class="appear2">
                     <h2 class="reveal__content pad-right">Outdoor</h2>
                 </div>
+                <div class="appear2 mt-5">
+                    <p class="text-outdoor pad-right">
+                        Nace una nueva aventura para viajar, disfrutar al aire libre ¡donde quieras y cuando quieras!
+                        Traza una nueva ruta con experiencias inolvidables junto a KARAWAN OUTDOOR
+                    </p>
+                </div>
             </div>
-            <p class="text-outdoor pad-right">
-                Nace una nueva aventura para viajar, disfrutar al aire libre ¡donde quieras y cuando quieras! Traza una
-                nueva ruta con experiencias inolvidables junto a KARAWAN OUTDOOR
-            </p>
         </div>
     </div>
     <div class="button-up">
@@ -123,23 +128,78 @@
 </div>
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-    @import url("https://fonts.cdnfonts.com/css/century-gothic?styles=24895,24896");
-
-    :root {
-        --fuentetitulos: "Raleway", sans-serif;
-        --fuenteparrafos: "Nunito Sans", sans-serif;
-        --fuenteextra: "Century Gothic", sans-serif;
-        --color1: #393646;
-        --color2: #4f4557;
-        --color3: #6d5d6e;
-        --color4: #f4eee0;
-        --color5: #c4dfdf;
-        --color6: #ddffbb;
-        --colorletras: #212529;
+    /* appear */
+    .appear {
+        -webkit-transition: all 0.8s;
+        transition: all 0.8s;
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
     }
 
+    .appear.inview {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transition-delay: 0.3s;
+        transition-delay: 0.1s;
+    }
+
+    .appear2 {
+        -webkit-transition: all 1.5s;
+        transition: all 1.5s;
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+
+    .appear2.inview2 {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .appear2.inview2:nth-child(1) {
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+    }
+
+    .appear2.inview2:nth-child(2) {
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    .appear2.inview2:nth-child(3) {
+        -webkit-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+    }
+
+    .appear2.inview2:nth-child(4) {
+        -webkit-transition-delay: 0.4s;
+        transition-delay: 0.4s;
+    }
+
+    .appear2.inview2:nth-child(5) {
+        -webkit-transition-delay: 0.5s;
+        transition-delay: 0.5s;
+    }
+
+    .appear3 {
+        -webkit-transition: all 0.8s;
+        transition: all 0.8s;
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+
+    .appear3.inview3 {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+    }
+    /* fin appear */
     .contain-grid-banos,
     .contain-grid-outdoor {
         width: 100%;
